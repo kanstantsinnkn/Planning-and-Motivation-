@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planning And Motivation</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
+  <link rel="stylesheet" href="./style/styles.css">
+  <style></style>
+</head>
+
+<body>
+  <div id="spa" class="app">
+    <header class="header" id="header">
+      <a class="mainWords" id="tab" href="#homepage" onclick="openTab(event, 'Homepage')">Planning And Motivation</a>
+      <p class="YNWA"> You'll Never Walk Alone </p>
+    </header>
+
+
+    <div class="tab" id="tab">
+      <a id="linkHP" class="tablinks" href="#homepage" onclick="openTab(event, 'Homepage')">HOMEPAGE</a>
+      <a class="tablinks" href="#myplans" onclick="openTab(event, 'MyPlans')">MY PLANS</a>
+      <a class="tablinks" href="#weather" onclick="openTab(event, 'Weather')">WEATHER</a>
+      <a class="tablinks" href="#motivationalquotes" onclick="openTab(event, 'MotivateQts')">MOTIVATIONAL QUOTES</a>
+      <a class="tablinks" href="#contacts" onclick="openTab(event, 'Contacts')">CONTACTS</a>
+    </div>
+
+    <div id="Homepage" class="tabcontent">
+      <h3></h3>
+      <div class="YNWA2">
+        <p>You don't know how to start the day?</p>
+        <p>Do you have many plans and tasks?</p>
+        <p>Make a cup of tea and start using this application.</p>
+        <ul>With it you will:
+          <li>make and organize your plans,
+          <li>find out the weather outside your window,</li>
+          <li>be motivated.</li>
+          <p>You will never walk alone. You will be with SPA “Planning And Motivation”.</p>
+          <p>Welcome!</p>
+      </div>
+    </div>
+
+    <div id="MyPlans" class="tabcontent">
+      <h3></h3>
+      <p class="YNWA2">"Setting goals is the first step in turning the invisible into the visible.” Tony Robbins</p>
+      <div id="app">
+        <button class="add-note" type="button">+</button>
+      </div>
+      <p class="margin1"></p>
+    </div>
+
+    <div id="Weather" class="tabcontent">
+      <h3></h3>
+      <p></p>
+      <div class="weatherContainer">
+        <div class="row">
+          <div class="package featured">
+            <p class="package-name"></p>
+            <p class="features"></p>
+            <p class="degrees"></p>
+            <p class="degrees2"></p>
+            <p class="disclaimer"></p>
+            <p class="press"></p>
+            <p class="speed"></p>
+            <p class="degrees"></p>
+          </div>
+        </div>
+      </div>
+      <p class="margin1"></p>
+    </div>
+
+    <div id="MotivateQts" class="tabcontent">
+      <div class="container">
+        <div class="quotes-container">
+          <div class="quote-btn">
+            <button id="generate" class="btnQTS">Generate Quote</button>
+          </div>
+          <div class="inner-quotes-container">
+            <p id="quote"></p>
+            <h3 id="author"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Contacts" class="tabcontent">
+      <h3 class="YNWA">We are glad to see you here!</h3>
+      <h3 class="YNWA">Make plans. Be motivated. Enjoy your life.</h3>
+      <p></p>
+      <div class="contactsContainer">
+        <p>Do you want to get more information about the single page apllication "Planning And Motivation"?</p>
+        <p>Please contact us:</p>
+        <p>Email: k.nashchynets@gmail.com</p>
+        <p>Phone: +375 29 38-55-300</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© IT-Academy, Minsk, 2022</p>
+  </footer>
+  </div>
+
+  <script defer src="./logic/main.js"></script>
+
+</body>
+
+</html>
